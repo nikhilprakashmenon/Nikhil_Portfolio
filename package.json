@@ -1,16 +1,27 @@
 {
   "name": "Nikhil_Portfolio",
   "version": "1.0.0",
-  "description": "Personal Portfolio page",
-  "main": "index.js",
+  "description": "My portfolio",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
+
+  "dependencies": {
+    "express": "4.13.3"
+  },
+
+  "engines": {
+    "node": "0.12.7"
+  },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nikhilprakashmenon/Nikhil_Portfolio.git"
   },
-  "keywords": ["Portfolio"],
+
+  "keywords": [],
   "author": "Nikhil Prakash",
   "license": "ISC",
   "bugs": {
