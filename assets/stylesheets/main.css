@@ -1,0 +1,626 @@
+/*
+    Mobile first approach for responsive website
+*/
+/*
+  ========================================
+  CSS Resets
+  ========================================
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  color: #888;
+  font: 300 16px/22px "Montserrat",  "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Container and Grid
+  ========================================
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container,
+.grid {
+  /*border:1px solid black;*/
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+*/
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+strong {
+  font-weight: bold;
+}
+cite, em {
+  font-style: italic;
+}
+
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+
+h1, h2, h3, h4 {
+  color: #648880;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a:hover {
+  color: #a9b2b9;
+}
+a {
+  color: #648880;
+  text-decoration: none;
+}
+
+.primary-header a,
+.primary-footer a {
+  color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #648880;
+}
+
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+
+.row,
+.row-alt {
+ /* min-width: 960px;*/
+}
+
+.row {
+  background: #fff;
+  background: rgba(145, 169, 185, 0.29);
+  padding: 4% 0 5% 0;
+}
+
+.row-alt {
+   background: #cbe2c1;
+   background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+   background: -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+   background: linear-gradient(to right, #8CA9A6, #49A0A9);
+   padding: 44px 0 22px 0;
+ }
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav{
+  display: none;
+}
+
+/*
+  ========================================
+  Primary Header
+  ========================================
+*/
+
+.primary-header{
+  padding: 20px;
+  margin-bottom: 5%;
+}
+
+.primary-header a{
+  color: #87DCC9;
+  /*color: #fff;*/
+}
+
+.logo{
+  font-family:'Press Start 2P', cursive;
+  font-size: 1.55em;
+  color: #648880;
+  width: 75%;
+  padding: 10px;
+  margin: 10px auto;
+  text-align: center;
+  border:1px solid black;
+  border-radius:0 15px 0 15px;
+  background: #423E37;
+  background: -webkit-linear-gradient(to right,#080704, #8AD0C7);
+  background:    -moz-linear-gradient(to right,#080704, #8AD0C7);
+  background:         linear-gradient(to right,#080704, #8AD0C7);
+  -webkit-box-shadow: 18px 9px 5px 0px rgba(0,0,0,0.75);
+     -moz-box-shadow: 18px 9px 5px 0px rgba(0,0,0,0.75);
+          box-shadow: 18px 9px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+/*
+  ========================================
+  Tagline and image - Jumbotron
+  ========================================
+*/
+
+.jumbotron{
+  padding: 0;
+  margin: 0 auto;
+}
+
+.jumbotron img{
+  position: relative;
+  left:10%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/*.jumbotron q{
+  display: none;
+}*/
+
+/*
+  ========================================
+  Main Content
+  ========================================
+*/
+
+.main-content{
+  padding: 6%;
+}
+
+.quote{
+  display: none;
+}
+
+.content h2{
+  text-align: center;
+  color: #87DCC9;
+}
+
+.main-content aside{
+  display: none;
+}
+
+.small-viewport {
+  text-align: center;
+}
+
+.small-viewport section:first-of-type{
+  float: left;
+}
+
+.small-viewport section:last-of-type{
+  float: right;
+}
+
+
+
+/*
+  ========================================
+  Portfolio for mobile
+  ========================================
+*/
+
+.portfolio {
+  text-align: center;
+}
+
+.portfolio img{
+  width: 50%;
+  border-radius: 5%;
+}
+
+.portfolio .project{
+  margin-bottom: 10%;
+}
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+.primary-footer{
+  text-align: center;
+  color: #87DCC9;
+}
+
+.primary-footer a{
+  color: #87DCC9;
+  font-weight: 400;
+}
+
+.primary-footer .icons a{
+  margin: 2%;
+}
+
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+body {
+  color: #bbc1C5;
+  font: 300 16px/22px "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #4F3C63;
+  background: -webkit-linear-gradient(to right bottom,#3C4150, #0D5575);
+  background:    -moz-linear-gradient(to right bottom,#3C4150, #0D5575);
+  background:         linear-gradient(to right bottom,#3C4150, #0D5575);
+}
+
+
+/*
+  ======================================================================================
+  For larger viewports
+  ======================================================================================
+*/
+
+@media all and (min-width: 783px){
+
+
+/*
+  ========================================
+  Grid- large viewport
+  ========================================
+*/
+
+
+  .col-1-3,
+  .col-2-3 {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .grid,
+  .col-1-3,
+  .col-2-3 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .col-1-3 {
+    width: 33.33%;
+  }
+  .col-2-3 {
+    width: 66.66%;
+  }
+
+/*
+  ========================================
+  Navigation - large viewport
+  ========================================
+*/
+
+  .nav{
+    display: block;
+    text-align: right;
+    margin-top:10px;
+    /*margin:0 30px;*/
+  }
+
+  .nav li{
+    display: inline-block;
+  }
+
+  .logo{
+    width: 45%;
+    font-size: 2em;
+    padding: 10px;
+    margin: 10px auto;
+    border:1px solid black;
+    border-radius:0 15px 0 15px;
+  }
+
+  /*
+    ========================================
+    Primary Header - large viewport
+    ========================================
+  */
+
+  .primary-header{
+    padding: 20px;
+  }
+
+  .primary-header a{
+    padding: 15px;
+    text-decoration: none;
+  }
+
+  .logo{
+    float: left;
+  }
+
+  /*
+    ========================================
+    Image - large viewport
+    ========================================
+  */
+
+  .jumbotron{
+    padding: 0;
+    margin: 0;
+  }
+
+  .jumbotron img{
+    position: relative;
+    left: 9.5%;
+    margin-top: 1.1%;
+  }
+
+  /*
+    ========================================
+    Main Content- large viewport
+    ========================================
+  */
+  .main-content{
+    padding: 0;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+  }
+
+  .content h2{
+    text-align: center;
+    color: #87DCC9;
+  }
+
+  .main-content aside{
+    display: inline-block;
+    border:1px solid #87DCC9;
+    border-radius: 15px;
+    padding:1.2%; 
+    -webkit-box-shadow: 2px 4px 19px 0px rgba(87,178,201,1);
+       -moz-box-shadow: 2px 4px 19px 0px rgba(87,178,201,1);
+            box-shadow: 2px 4px 19px 0px rgba(87,178,201,1);
+  }
+
+  .main-content aside h2{
+    padding-bottom: 30px;
+  }
+
+  .icons{
+    padding-bottom: 10%;
+    margin: 0;
+  }
+
+  .icons a{
+    margin: 15%;
+  }
+
+  .quote{
+    display: block;
+    text-align: center;
+    padding: 3%;
+    font-family:'Cardo', cursive;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.6em;
+    text-transform: capitalize;
+  }
+
+  .small-viewport{
+    display: none;
+  }
+
+  /*
+    ========================================
+    Primary footer- large viewport
+    ========================================
+  */
+
+  .primary-footer {
+    font-size: 100%;
+    padding-bottom: 44px;
+    padding-top: 44px;
+  }
+
+  .primary-footer a{
+    padding: 15px;
+  }
+
+  .primary-footer small {
+    float: left;
+  }
+
+  .primary-footer .icons{
+    display: none;
+  }
+
+
+   /*
+    ========================================
+    Portfolio - large viewport
+    ========================================
+  */
+
+  .project img{
+    width: 95%;
+    border-radius: 7%;
+  }
+
+   /*
+    ========================================
+    Contact Form - large viewport
+    ========================================
+  */
+
+  .contact{
+    text-align: center;
+  }
+
+  form {
+    /*border: 1px solid #c6c7cc;*/
+    border-radius: 5px;
+    font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    width: 240px;
+    margin-bottom: 5%;
+  }
+
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  input {
+    border-radius: 5px;
+    font: 14px/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+  }
+
+  .sender-info {
+    padding: 20px 20px 0 20px;
+  }
+
+  .sender-info label {
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 12%;
+  }
+
+  .sender-info label:last-of-type{
+    padding: 3%;
+  }
+
+  .sender-info label:last-of-type textarea{
+    height: 6em;
+    width: 15em;
+    border-radius: 5%;
+  }
+
+  .sender-info input {
+    background: #fff;
+    border: 1px solid #c6c7cc;
+    color: #636466;
+    padding: 6px;
+    margin-top: 6px;
+    width: 100%;
+  }
+
+  .sender-action {
+    padding: 1%;
+  }
+
+  .sender-action .btn {
+    background: #87DCC9;
+    background: -webkit-linear-gradient(rgba(87,178,201,1), #87dcc9);
+    background:    -moz-linear-gradient(rgba(87,178,201,1), #87dcc9);
+    background:         linear-gradient(rgba(87,178,201,1), #87dcc9);
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+    left:1.4%;
+    padding: 8px 16px;
+  }
+
+  .sender-action label {
+    color: #7c7c80;
+    font-size: 12px;
+    float: left;
+    margin: 10px 0 0 20px;
+  }
+}

@@ -1,0 +1,977 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"for",
+				"form	Tag"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"s",
+				"sans-serif"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"ta",
+				"target	Attr"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"th",
+				"th	Tag"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"border-co",
+				"border-color"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"hea",
+				"header	Tag"
+			],
+			[
+				"debug",
+				"debugger"
+			],
+			[
+				"program",
+				"programParseTree"
+			],
+			[
+				"progr",
+				"programParseTree"
+			],
+			[
+				"err",
+				"errorHandler"
+			],
+			[
+				"proce",
+				"procedureTree"
+			],
+			[
+				"sym",
+				"symbol"
+			],
+			[
+				"curre",
+				"currentOperation"
+			],
+			[
+				"proc",
+				"procedureTree"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"curr",
+				"currentOperation"
+			],
+			[
+				"cur",
+				"currentOperation"
+			],
+			[
+				"de",
+				"debugger"
+			],
+			[
+				"symb",
+				"symbolParser"
+			],
+			[
+				"arguem",
+				"arguments"
+			],
+			[
+				"arg",
+				"arguments"
+			],
+			[
+				"erro",
+				"errorHandler"
+			],
+			[
+				"number",
+				"numberCheck"
+			],
+			[
+				"ident",
+				"IdentifierCheck"
+			],
+			[
+				"num",
+				"numberCheck"
+			],
+			[
+				"spe",
+				"specialOperSelector"
+			],
+			[
+				"temp",
+				"tempSymbol"
+			],
+			[
+				"Invali",
+				"invalidIdentifier"
+			],
+			[
+				"test",
+				"testTree"
+			],
+			[
+				"oper",
+				"operationSelector"
+			],
+			[
+				"error",
+				"errorHandler"
+			],
+			[
+				"lam",
+				"lambdaBodyTree"
+			],
+			[
+				"lamd",
+				"lambda"
+			],
+			[
+				"para",
+				"paramTree"
+			],
+			[
+				"ero",
+				"errorHandler"
+			],
+			[
+				"iden",
+				"identifier"
+			],
+			[
+				"ne",
+				"next"
+			],
+			[
+				"next",
+				"nextSymb"
+			],
+			[
+				"Pa",
+				"parseTree"
+			],
+			[
+				"par",
+				"parseTree"
+			],
+			[
+				"pr",
+				"program"
+			],
+			[
+				"swit",
+				"switchMap"
+			],
+			[
+				"sw",
+				"switchMap"
+			],
+			[
+				"p",
+				"program"
+			],
+			[
+				"filtered",
+				"filteredList"
+			],
+			[
+				"my",
+				"myArray"
+			],
+			[
+				"ar",
+				"arrayToList"
+			],
+			[
+				"link",
+				"linked_list"
+			],
+			[
+				"lin",
+				"linked_list"
+			],
+			[
+				"Lin",
+				"LinkedList"
+			],
+			[
+				"inor",
+				"inorder"
+			],
+			[
+				"po",
+				"pos_in_inorder"
+			],
+			[
+				"preor",
+				"preorder_list"
+			],
+			[
+				"pre",
+				"_precounter"
+			],
+			[
+				"bt",
+				"btqueue"
+			],
+			[
+				"Sig",
+				"SignUp"
+			],
+			[
+				"con",
+				"context"
+			],
+			[
+				"is_",
+				"is_authenticated"
+			],
+			[
+				"ac",
+				"action	Attr"
+			],
+			[
+				"url",
+				"urlpatterns"
+			],
+			[
+				"from",
+				"from_email"
+			],
+			[
+				"cont",
+				"content_message"
+			],
+			[
+				"st",
+				"style	Tag"
+			],
+			[
+				"co",
+				"conf"
+			],
+			[
+				"mu",
+				"multiply"
+			],
+			[
+				"sq",
+				"sql_do"
+			],
+			[
+				"db",
+				"db_connection"
+			],
+			[
+				"div",
+				"divisioncheck"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
+				"l",
+				"li	Tag"
+			],
+			[
+				"tr",
+				"transform"
+			],
+			[
+				"pare",
+				"parentId"
+			],
+			[
+				"image",
+				"imagedb"
+			],
+			[
+				"sca",
+				"scaledtop"
+			],
+			[
+				"scal",
+				"scaledtop"
+			],
+			[
+				"textar",
+				"TextAreaToDelete"
+			],
+			[
+				"stop",
+				"stopPropagation"
+			],
+			[
+				"tar",
+				"target"
+			],
+			[
+				"w",
+				"which"
+			],
+			[
+				"slideF",
+				"slideFitToCanvasInfo"
+			],
+			[
+				"stat",
+				"state"
+			],
+			[
+				"targ",
+				"targetSlide"
+			],
+			[
+				"left",
+				"leftBefore"
+			],
+			[
+				"mi",
+				"minusLeft"
+			],
+			[
+				"slideFi",
+				"slideFitToCanvasInfo"
+			],
+			[
+				"ima",
+				"imageFromChooseImg"
+			],
+			[
+				"border",
+				"border-style"
+			],
+			[
+				"im",
+				"imageName"
+			],
+			[
+				"pla",
+				"placeImage"
+			],
+			[
+				"nex",
+				"nextSlide"
+			],
+			[
+				"ret",
+				"returnVal"
+			],
+			[
+				"cure",
+				"currentSlideTA"
+			],
+			[
+				"cu",
+				"currentSlide"
+			],
+			[
+				"prev",
+				"prevSlide"
+			],
+			[
+				"this",
+				"thisHREF"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"sc",
+				"script"
+			],
+			[
+				"load",
+				"loadJS"
+			],
+			[
+				"imga",
+				"imageLoaded"
+			],
+			[
+				"border-",
+				"border-right"
+			],
+			[
+				"rota",
+				"rotateY"
+			],
+			[
+				"ro",
+				"rotateY"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"trans",
+				"transitionArray"
+			],
+			[
+				"visi",
+				"visible"
+			],
+			[
+				"slide",
+				"slideInfo"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/ADMIN/node-js-getting-started/index.js",
+			"settings":
+			{
+				"buffer_size": 1200,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/User/Node.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 174.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": true,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/ADMIN/node-js-getting-started/package.json",
+		"/C/Program Files/Heroku/ruby-2.1.7/lib/ruby/site_ruby/2.1.0/readline.rb",
+		"/C/Program Files/Heroku/ruby-2.1.7/lib/ruby/site_ruby/2.1.0/rbreadline.rb",
+		"/C/Program Files/Heroku/lib/heroku/client/heroku_postgresql.rb",
+		"/C/Program Files/Heroku/ruby-2.1.7/lib/ruby/site_ruby/2.1.0/rb-readline.rb",
+		"/C/Users/ADMIN/node-js-getting-started/index.js",
+		"/C/Users/ADMIN/Desktop/Nikhil_Portfolio/assets/stylesheets/main.css",
+		"/C/Users/ADMIN/Desktop/Nikhil_Portfolio/contact.html",
+		"/C/Users/ADMIN/Desktop/Nikhil_Portfolio/portfolio.html",
+		"/C/Users/ADMIN/Desktop/Nikhil_Portfolio/index.html",
+		"/C/Users/ADMIN/Desktop/HTML_CSS_Proj/assets/stylesheets/main.css",
+		"/C/Users/ADMIN/Desktop/HTML_CSS_Proj/index.html",
+		"/C/Users/ADMIN/Desktop/HTML_CSS_Proj/register.html",
+		"/C/Users/ADMIN/Desktop/HTML_CSS_Proj/venue.html",
+		"/C/Users/ADMIN/Desktop/HTML_CSS_Proj/schedule.html",
+		"/C/Users/ADMIN/Desktop/HTML_CSS_Proj/speakers.html",
+		"/C/Users/ADMIN/Desktop/test_css.css",
+		"/C/Users/ADMIN/Desktop/test.html",
+		"/C/Users/ADMIN/Desktop/swap.py",
+		"/C/Users/ADMIN/Desktop/Lispify.js",
+		"/C/Users/ADMIN/Desktop/Lispify_working_copy.js",
+		"/C/Users/ADMIN/Documents/GitHub/Lisp-Interpreter-in-Javascript/Lispify_old.js",
+		"/C/Users/ADMIN/Documents/GitHub/Lisp-Interpreter-in-Javascript/Lispify.js",
+		"/C/Users/ADMIN/Desktop/Lispify_before_procedure.js",
+		"/C/Users/ADMIN/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/ADMIN/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/ADMIN/Documents/GitHub/Lisp Interpreter in Javascript/Lispify.js",
+		"/D/Cloud/Dropbox/Javascript/test.js",
+		"/D/Cloud/Dropbox/Javascript/ancestry.js",
+		"/D/Cloud/Dropbox/Javascript/random js pgms/callbackfunctions.js",
+		"/C/Users/ADMIN/AppData/Roaming/Sublime Text 3/Packages/User/Node.sublime-build",
+		"/D/Cloud/Dropbox/Javascript/random js pgms/arrayToList.js",
+		"/D/Cloud/Dropbox/Javascript/random js pgms/arrayToList2.js",
+		"/D/Cloud/Dropbox/Javascript/random js pgms/chessboard.js",
+		"/D/Cloud/Dropbox/Javascript/random js pgms/deepEqual.js",
+		"/C/Users/ADMIN/Desktop/problem_files/findtarget.py",
+		"/D/Cloud/Dropbox/Javascript/random js pgms/filter_map_reduce.js",
+		"/D/Cloud/Dropbox/Javascript/random js pgms/reverse.js",
+		"/C/Users/ADMIN/Downloads/rispy.rb",
+		"/C/Users/ADMIN/Desktop/DS pgms/verticalprint.py",
+		"/C/Users/ADMIN/Desktop/DS pgms/llmergesort.py",
+		"/C/Users/ADMIN/PycharmProjects/Algorithms/Sort/mergesortforLL.py",
+		"/C/Users/ADMIN/PycharmProjects/Learning/LinkedListTutorial/MergeLL.py",
+		"/C/Users/ADMIN/Desktop/problem_files/base.py",
+		"/C/Users/ADMIN/Desktop/problem_files/production.py",
+		"/C/Users/ADMIN/Envs/19/Lib/site-packages/registration/backends/default/urls.py",
+		"/C/Users/ADMIN/Envs/19/Lib/site-packages/registration/urls.py",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/src/settings/production.py",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/requirements.txt",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/templates/registration/activate.html",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/templates/registration/activation_complete.html",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/templates/registration/activation_email_subject.txt",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/templates/registration/activation_email.html",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/templates/registration/activation_email.txt",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/templates/registration/login.html",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/templates/registration/logout.html",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/templates/registration/registration_base.html",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/templates/registration/registration_closed.html",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/templates/registration/registration_complete.html",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/templates/registration/registration_form.html",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/newsletter/views.py",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/templates/contact.html",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/src/settings/base.py",
+		"/C/Users/ADMIN/Envs/19/src/src/settings/production.py",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/src/views.py",
+		"/C/Users/ADMIN/Envs/19/src/templates/registration/registration_form.html",
+		"/C/Users/ADMIN/Envs/19/src/templates/about.html",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/templates/about.html",
+		"/C/Users/ADMIN/Envs/19/src/templates/home.html",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/templates/home.html",
+		"/C/Users/ADMIN/Envs/19/src/src/settings/base.py",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/templates/500.html",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/templates/404.html",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/templates/403.html",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/templates/400.html",
+		"/C/Users/ADMIN/Envs/19/webfaction/httpd.conf",
+		"/C/Users/ADMIN/Envs/19/src/src/wsgi.py",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/src/settings/local.py",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/src/old_settings.py",
+		"/C/Users/ADMIN/Envs/19/src/src/settings/local.py",
+		"/C/Users/ADMIN/Envs/19/src/src/old_settings.py",
+		"/C/Users/ADMIN/Envs/19/src/src_settings/settings/base.py",
+		"/C/Users/ADMIN/Envs/19/src/src_settings/settings/local.py",
+		"/C/Users/ADMIN/Envs/19/src/src_settings/old_settings.py",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/src_settings/settings/base.py",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/src_settings/settings/local.py",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/src_settings/settings/production.py",
+		"/C/Users/ADMIN/AppData/Local/Temp/5f5b9b00-df87-461e-b8f2-8bc9e2744f79/home/coolnikki89/webapps/mvpland/src/src_settings/old_settings.py",
+		"/C/Users/ADMIN/Envs/19/src/src/settings/__init__.py",
+		"/C/Users/ADMIN/Envs/19/src/newsletter/views.py",
+		"/C/Users/ADMIN/Envs/19/src/static_in_pro/our_static/css/navbar-static-top.css",
+		"/C/Users/ADMIN/Envs/19/src/templates/head_css.html",
+		"/C/Users/ADMIN/Envs/19/src/templates/navbar.html",
+		"/C/Users/ADMIN/Envs/19/src/newsletter/forms.py",
+		"/C/Users/ADMIN/Envs/19/src/templates/base.html",
+		"/C/Users/ADMIN/Envs/19/src/templates/contact.html",
+		"/C/Users/ADMIN/Envs/19/src/templates/registration/logout.html",
+		"/C/Users/ADMIN/Envs/19/src/templates/registration/login.html",
+		"/C/Users/ADMIN/Envs/19/src/src/settings.py",
+		"/C/Users/ADMIN/Envs/19/static_in_venv/static_root/admin/js/urlify.js",
+		"/C/Users/ADMIN/Envs/19/src/newsletter/admin.py",
+		"/C/Users/ADMIN/Envs/19/src/src/urls.py",
+		"/C/Users/ADMIN/Envs/19/src/src/views.py",
+		"/C/Users/ADMIN/Envs/19/src/static_in_pro/our_static/css/custom.css",
+		"/C/Users/ADMIN/Documents/WOLF/js/main.js",
+		"/C/Users/ADMIN/Envs/19/src/templates/javascript.html",
+		"/C/Users/ADMIN/Envs/19/src/newsletter/models.py",
+		"/C/Users/ADMIN/Envs/19/static_in_venv/static_root/js/bootstrap.min.js",
+		"/C/Users/ADMIN/Envs/19/src/static_in_pro/our_static/css/bootstrap.min.css",
+		"/C/Users/ADMIN/Envs/19/src/static_in_pro/our_static/img/example.txt",
+		"/C/Users/ADMIN/PycharmProjects/Learning/decorators2.py",
+		"/C/Users/ADMIN/PycharmProjects/Learning/decorator.py",
+		"/C/Users/ADMIN/Envs/19/Lib/site-packages/django/db/models/__init__.py",
+		"/C/Users/ADMIN/Envs/19/Lib/site-packages/django/db/models/base.py",
+		"/C/Users/ADMIN/Envs/19/Lib/site-packages/django/__init__.py",
+		"/C/Users/ADMIN/Envs/19/src/src/__init__.py",
+		"/C/Users/ADMIN/Envs/19/Lib/site-packages/django/db/utils.py",
+		"/C/Users/ADMIN/Envs/19/Lib/site-packages/django/db/__init__.py",
+		"/C/Users/ADMIN/Envs/19/src/newsletter/home.html",
+		"/C/Users/ADMIN/Envs/19/src/manage.py",
+		"/C/Users/ADMIN/Desktop/myvenv/src/src/urls.py",
+		"/C/Users/ADMIN/Desktop/myvenv/src/src/settings.py",
+		"/C/Users/ADMIN/Desktop/heightbalancedtree.py",
+		"/C/Users/ADMIN/Desktop/myvenv/Scripts/django-admin.py",
+		"/C/Users/ADMIN/Desktop/myvenv/src/manage.py",
+		"/D/Programming Languages Tutorials/Python/test.py",
+		"/D/python_test/test2.py",
+		"/D/Programming Languages Tutorials/Python/Lynda/Exercise Files/16 Databases/sqlite3-class.py"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"require",
+			"1",
+			"1.",
+			"dll",
+			"dl",
+			"require",
+			"dl",
+			"media",
+			"d",
+			"project",
+			"portfolio ",
+			"project",
+			"linear",
+			"linea",
+			"btn",
+			"col",
+			"row",
+			"aside",
+			"icons",
+			"lofo",
+			"row",
+			"quote",
+			"row",
+			"quote",
+			"jumbo",
+			"body",
+			"sati",
+			"font",
+			"font-family",
+			"body",
+			"quote",
+			"'Press Start 2P', ",
+			"logo",
+			"portfol",
+			"project",
+			"%;",
+			"border-radius",
+			">\n",
+			"strong",
+			"  \n",
+			"small",
+			"icons",
+			"row",
+			"footer",
+			"30px",
+			"main ",
+			"position: absolute;",
+			"background",
+			"group",
+			"img",
+			"image",
+			"nav",
+			"#",
+			"body",
+			"nav",
+			"h1",
+			"container",
+			"body",
+			"border",
+			"font-fami",
+			"orange",
+			"parseLambda",
+			"SYMBOLPAR",
+			"debugger",
+			"parseLam",
+			"debugger",
+			"parseLam",
+			"parseProcedureCall",
+			"next",
+			"parseProcedureCall",
+			"parseProcedure",
+			"lambdasy",
+			"parseExpre",
+			"parseLam",
+			"lambda",
+			"condOp",
+			"condOP",
+			"checking synatx",
+			"debugger",
+			"Checking syntax of test for IF Special form",
+			"debugger",
+			"invalidIdent",
+			"IdentifierCheck",
+			"numberCheck",
+			"lambda",
+			"operationS",
+			"specialOperSelector",
+			"special",
+			"specialOpSelector",
+			"functionCall",
+			"parseTestForIf",
+			"parseTest",
+			"parseExpressionSyntax",
+			"parseexpressionSyntax",
+			"expression",
+			"ExpSyntaxCheck",
+			"Testing",
+			"parseLambda",
+			"identifier",
+			"errorHandler",
+			")\n",
+			"errorHandler",
+			"operationSelector",
+			"next",
+			"error",
+			")\n",
+			"error",
+			"debugger",
+			"error",
+			"debugger",
+			"Sidonie",
+			" Philibert",
+			" Philibert Haverbeke",
+			"Node",
+			"btqueue",
+			"database",
+			"myproject",
+			"src",
+			"myproject",
+			"src",
+			"jumbotron",
+			"registration_login",
+			"default",
+			"1",
+			"4",
+			"getChar",
+			"Models",
+			"filename"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"isIdentifier",
+			"isNumber",
+			"specialOperSelector",
+			"specialOpSelector",
+			"parseTestCondForIf",
+			"parseTestForIf",
+			"parseExpression",
+			"parseExpressionSyntax",
+			"expressionSyntax",
+			"parseExpression",
+			"ExpSyntaxCheck",
+			"_btqueue",
+			"$\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/ADMIN/node-js-getting-started/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1200,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								802,
+								802
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": -0.0,
+						"translation.y": 264.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 142.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "nikhil_portfolio.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 244.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
