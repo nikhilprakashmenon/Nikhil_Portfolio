@@ -5,7 +5,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var pg = require("pg");
 var app = express();
-var connString = "postgres://postgres:root@123@localhost:5432/portfolio"
+var connString = "postgres://postgres:root@123@localhost:5432/portfolio";
 
 
 //Configurations
@@ -46,7 +46,7 @@ app.post("/contact.html", function(request, response) {
 function persist(response, requestParam, table){
 
 	console.log("Inside persist function");
-	pg.connect(connString, function(err, client, done){
+	pg.connect(process.env.DATABASE_URL || connString, function(err, client, done){
 
 		// Handling connection errors
 		if(err){
