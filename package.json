@@ -9,7 +9,9 @@
   },
   "dependencies": {
     "body-parser": "^1.15.0",
+    "csprng": "^0.1.1",
     "express": "4.13.3",
+    "js-sha256": "^0.3.0",
     "pg": "^4.5.1"
   },
   "engines": {
