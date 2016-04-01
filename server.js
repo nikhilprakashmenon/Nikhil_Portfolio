@@ -16,8 +16,10 @@ var connString = "postgres://postgres:root@123@localhost:5432/portfolio";
 
 //Configurations
 app.set("port",(process.env.PORT||5000));
+app.set('view engine', 'ejs');
 app.use(express.static(__dirname + "/public"));
 var sha256Ex = require(__dirname +"/public/assets/javascript/sha256hash");
+
 
 
 //Parses POST requests. The Content-type in the HTTP request header is set to application/x-www-form-urlencoded
@@ -26,7 +28,6 @@ app.use(bodyParser.urlencoded({type:"application/x-www-form-urlencoded"}));
 //Route handlers - contact.html
 app.post("/contact.html", function(request, response) {
 
-	console.log("Inside post handler for contact.html");
 	var requestParam = {
 		name : request.body.fullname,
 		email : request.body.email,
@@ -45,7 +46,6 @@ app.post("/contact.html", function(request, response) {
 //Route handlers - admin.html
 app.post("/admin.html", function(request, response) {
 
-	console.log("Inside post handler for admin.html");
 	var requestParam = {
 		mobile : request.body.mobile,
 		password : request.body.adminpass,
@@ -60,6 +60,21 @@ app.post("/admin.html", function(request, response) {
 function userAuthenticate(requestParam, response){
 
 	var res, results = [];
+
+	function renderAdminPage(){
+		console.log("Inside render admin page");
+		  pg.connect(process.env.DATABASE_URL || connString, function(err, client, done) {
+		    client.query('SELECT * FROM public.contact_info;', function(err, result) {
+		      done();
+		      if (err)
+		       { return console.error(err); response.send("Error " + err); }
+		      else
+		       { return response.render('adminPage', {results: result.rows} ); }
+		    });
+		  });
+	}
+
+
 	function userCheck(arg){
 
 		if(arg["mobile"] == requestParam["mobile"]){
@@ -68,14 +83,14 @@ function userAuthenticate(requestParam, response){
 			var passCheck = sha256(arg["salt"] + requestParam.password);
 
 			if(passCheck == arg["hash_pwd"]){
-				return response.send("Valid user!");
+				return renderAdminPage();				
 			}
-			else{
-				return response.send("Invalid user name or password!");
+			else{				
+				return response.render('errorPage', {status: 401, error: "Invalid user name or password!"} ); 
 			}
 		}
-		else{
-			return response.send("Invalid user name or password!");;
+		else{	
+			return response.render('errorPage', {status: 401, error: "Invalid user name or password!"}); 
 		}
 
 	}
@@ -86,7 +101,7 @@ function userAuthenticate(requestParam, response){
 		if(err){
 			done();
 			console.log("Error getting connection: " + err);
-			return response.send("Error getting connection: " + err);
+			return response.render('errorPage', {status: 500, error: "Internal Server Error...We will get back to you.."} ); 
 		}
 
  		var selectQuery = 'SELECT mobile, name, hash_pwd, salt FROM public.user_account WHERE mobile = \'' + String(requestParam.mobile) + '\';';
@@ -96,7 +111,7 @@ function userAuthenticate(requestParam, response){
 			if(err){
 				done();
 				console.log("Error in query: " + err);
-				return response.send("Error in query: " + err);
+				return response.render('errorPage', {status: 500, error: "Internal Server Error...We will get back to you.."} ); 
 			}
 		});
 
@@ -113,7 +128,7 @@ function userAuthenticate(requestParam, response){
             }
             else{
             	console.log("Error: Fetched more than one row");
-            	return response.send("Error: Fetched more than one row");
+            	return response.render('errorPage', {status: 500, error: "Internal Server Error...We will get back to you.."} ); 
             }	
         });
  		
@@ -130,8 +145,7 @@ function persist(response, requestParam, table){
 		if(err){
 			done();
 			console.log("Error getting connection: " + err);
-			// return {status:500, error:true, errMessage: err};
-			return response.send("Error getting connection: " + err);
+			return response.render('errorPage', {status: 500, error: "Internal Server Error...We will get back to you.."} ); 
 		}
 
  		var query, argList;
@@ -147,7 +161,7 @@ function persist(response, requestParam, table){
 			done();
 			if(err){
 				console.log("Error in query: " + err);
-				return response.send("Error in query: " + err);
+				return response.render('errorPage', {status: 500, error: "Internal Server Error...We will get back to you.."} ); 
 			}
 			else{
 				console.log("success storing to database");
