@@ -12,7 +12,7 @@ var pg = require("pg");
 // npm install express-session --save
 var session = require('express-session');
 // npm install connect-pg-simple --save
-var PostgreSqlStore = require('connect-pg-simple')(session);
+// var PostgreSqlStore = require('connect-pg-simple')(session);
 
 
 
@@ -25,9 +25,9 @@ var sessionOptions = {
   secret: "tq2pdxrblkbgp8vt8kbdpmzdh1w8bex",
   resave : true,
   saveUninitialized : false,
-  store : new PostgreSqlStore({
-    conString: connString
-  })
+  // store : new PostgreSqlStore({
+  //   conString: connString
+  // })
 };
 app.use(session(sessionOptions));
 var sess;
@@ -94,7 +94,7 @@ function userAuthenticate(requestParam, response){
 		      else{ 
 		      		console.log("Session set to mobile ");
 		      		sess.mobile = requestParam.mobile;
-		    		return response.render('adminPage', {results: result.rows, session:sess} ); 
+		    		return response.render('adminPage', {results: result.rows} ); 
 		      }
 		    });
 		  });
