@@ -9,9 +9,28 @@ var sha256 = require('js-sha256');
 var rand = require('csprng');
 // npm install pg --save
 var pg = require("pg");
+// npm install express-session --save
+var session = require('express-session');
+// npm install connect-pg-simple --save
+var PostgreSqlStore = require('connect-pg-simple')(session);
+
+
 
 var app = express();
 var connString = "postgres://postgres:root@123@localhost:5432/portfolio";
+
+
+// session management
+var sessionOptions = {
+  secret: "tq2pdxrblkbgp8vt8kbdpmzdh1w8bex",
+  resave : true,
+  saveUninitialized : false,
+  store : new PostgreSqlStore({
+    conString: connString
+  })
+};
+app.use(session(sessionOptions));
+var sess;
 
 
 //Configurations
@@ -51,8 +70,11 @@ app.post("/admin.html", function(request, response) {
 		password : request.body.adminpass,
 	};
 
+
+	sess = request.session;
 	// authenticate user
 	userAuthenticate(requestParam, response);
+	
 });
 
 
@@ -66,10 +88,14 @@ function userAuthenticate(requestParam, response){
 		  pg.connect(process.env.DATABASE_URL || connString, function(err, client, done) {
 		    client.query('SELECT * FROM public.contact_info;', function(err, result) {
 		      done();
-		      if (err)
-		       { return console.error(err); response.send("Error " + err); }
-		      else
-		       { return response.render('adminPage', {results: result.rows} ); }
+		      if (err){
+		    		return console.error(err); response.send("Error " + err); 
+		    	}
+		      else{ 
+		      		console.log("Session set to mobile ");
+		      		sess.mobile = requestParam.mobile;
+		    		return response.render('adminPage', {results: result.rows, session:sess} ); 
+		      }
 		    });
 		  });
 	}

@@ -27,6 +27,7 @@
 				<li><a href="index.html">HOME</a></li>
 				<li><a href="portfolio.html">PORTFOLIO</a></li>
 				<li><a href="contact.html">CONTACT</a></li>
+				<li><a href="admin.html" name="logout">LOGOUT</a></li>
 			</ul>
 		</nav>
 
@@ -40,7 +41,8 @@
 		<!-- Contact me -->
 		<section class="content admin adminPage">
 			
-			<h2> Welcome Admin </h2>
+			<h2> Welcome Admin (<%= session.mobile %>) </h2>
+
 
 			<p> Below people contacted you...</p>
 			
