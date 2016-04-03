@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<% include ../partials/head.ejs %>
+	<title>Contact Me</title>
+</head>
+<body>
+
+	<!-- Primary header --> 
+	<% include ../partials/header.ejs %>
+
+	<!-- Main Content -->
+	<div class="grid main-content">
+		
+		<!-- Contact me -->
+		<section class="content contact">
+			
+			<h2> Contact Me </h2>
+
+			<p> I love to socialize...Please don't hesitate to drop an email !
+
+			<form class="col-1-3" action="#" method="post">
+				<fieldset  class="sender-info">
+
+					<label> 
+						Name
+						<input type="text" name="fullname" autofocus>
+					</label>
+				
+					<label> 
+						Email* 
+						<input type="email" name="email" placeholder="name@domain.com" required>
+					</label>
+				
+					<label> 
+						Subject
+						<input type="text" name="subject">
+					</label>
+				
+					<label> 
+						Message 
+						<textarea name="message"></textarea>
+					</label>
+				
+				</fieldset>
+					
+				<fieldset  class="sender-action">
+					<input class="btn" type="submit" name="contact-info" value="Send">
+				</fieldset>
+
+			</form>
+
+		</section>
+
+	</div>
+
+	<!-- Primary footer -->
+	<% include ../partials/footer.ejs %>
+
+</body>
+</html>

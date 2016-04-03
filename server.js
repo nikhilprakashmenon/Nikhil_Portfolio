@@ -47,8 +47,27 @@ var sha256Ex = require(__dirname +"/public/assets/javascript/sha256hash");
 app.use(bodyParser.urlencoded({type:"application/x-www-form-urlencoded"}));
 
 
-//Route handlers - contact.html
-app.post("/contact.html", function(request, response) {
+//Route handler - index page
+app.get("/", function(request, response){
+	response.render("pages/index");
+});
+
+//Route handler - index page
+app.get("/index", function(request, response){
+	response.render("pages/index");
+});
+
+//Route handler - portfolio page 
+app.get("/portfolio", function(request, response){
+	response.render("pages/portfolio");
+});
+//Route handler - GET request contact page
+app.get("/contact", function(request, response){
+	response.render("pages/contact");
+});
+
+//Route handler - POST request to contact page
+app.post("/contact", function(request, response) {
 
 	var requestParam = {
 		name : request.body.fullname,
@@ -57,13 +76,12 @@ app.post("/contact.html", function(request, response) {
 		message: request.body.message || null,
 	};
 	
-	persist(response, requestParam, "contact_info"); // Save data to database
-		
+	persist(response, requestParam, "contact_info"); // Save data to database	
 });
 
+//Route handler - GET request to admin page
 app.get("/adminPage", function(request, response){
-	console.log("get request for adminPage");
-
+	
 	sess = request.session;
 	if(typeof sess !== 'undefined' && sess.mobile){
 		renderAdminPage(response);
@@ -73,10 +91,8 @@ app.get("/adminPage", function(request, response){
 	}	
 });
 
-//Route handlers - adminPage
+//Route handlers - POST request to admin page
 app.post("/adminPage", function(request, response) {
-
-	console.log("Post request to adminPage");
 
 	sess = request.session;
 	if(typeof sess !== 'undefined' && sess.mobile){
@@ -91,7 +107,7 @@ app.post("/adminPage", function(request, response) {
 	}
 });
 
-// Route handler - logout
+//Route handler - logout
 app.get("/logout", function(request, response){
 
 	sess = request.session;
@@ -232,7 +248,7 @@ function persist(response, requestParam, table){
 			}
 			else{
 				console.log("success storing to database");
-				return response.sendFile(__dirname + "/public/contact.html");
+				return response.render("pages/contact");
 			}
 		});
 	});
