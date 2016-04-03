@@ -205,7 +205,8 @@ function userAuthenticate(requestParam, response){
             done();
 			
             if(results.length == 1){        
-            	res = results[0];            	
+            	res = results.pop(0);
+            	results = [];            	
             	return userCheck(res);
             }
             else{
