@@ -42,7 +42,9 @@
 		<section class="content admin adminPage">
 			
 			
-			<h2> Welcome Admin </h2>
+			<h2> Welcome Admin <% if(typeof session.mobile !== 'undefined') { %>
+				<%= session.mobile %> <% } %>
+			</h2>
 			<p> Below people contacted you...</p>
 			
 				<ul>

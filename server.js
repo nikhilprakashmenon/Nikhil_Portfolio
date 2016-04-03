@@ -122,8 +122,8 @@ function renderAdminPage(response){
 
 	    client.query('SELECT * FROM public.contact_info;', function(err, result) {
 	      done();
+	      
 	      if (err){
-	      		done();
 	    		console.log(err);
 	    		return response.render('pages/errorPage', {status: 500, error: "Internal Server Error...We will get back to you shortly"} ); 
 	    	}
@@ -148,7 +148,6 @@ function userAuthenticate(requestParam, response){
 			var passCheck = sha256(arg["salt"] + requestParam.password);
 
 			if(passCheck == arg["hash_pwd"]){
-	      		console.log("Session set to mobile ");
 	      		sess.mobile = requestParam.mobile;
 				return renderAdminPage(response);				
 			}
@@ -187,7 +186,7 @@ function userAuthenticate(requestParam, response){
     	});
 
     	query.on('end', function() {
-            // done();
+            done();
 			
             if(results.length == 1){        
             	res = results[0];            	
@@ -226,8 +225,8 @@ function persist(response, requestParam, table){
 
 		client.query(query, argList ,function(err, result){
 			
+			done();
 			if(err){
-				done();
 				console.log("Error in query: " + err);
 				return response.render('pages/errorPage', {status: 500, error: "Internal Server Error...We will get back to you.."} ); 
 			}
