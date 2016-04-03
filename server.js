@@ -17,16 +17,18 @@ var PostgreSqlStore = require('connect-pg-simple')(session);
 
 
 var app = express();
-var connString = "postgres://postgres:root@123@localhost:5432/portfolio";
+var dbConnect = process.env.DATABASE_URL || "postgres://postgres:root@123@localhost:5432/portfolio";
+var cookieSecret = process.env.COOKIE_SECRET || "tq2pdxrblkbgp8vt8kbdpmzdh1w8bex";
 
-
+	
 // session management
 var sessionOptions = {
-  secret: "tq2pdxrblkbgp8vt8kbdpmzdh1w8bex",
+  secret: cookieSecret,
   resave : true,
   saveUninitialized : false,
   store : new PostgreSqlStore({
-    conString: connString
+  	pg: pg,
+    conString: dbConnect
   })
 };
 app.use(session(sessionOptions));
@@ -110,7 +112,7 @@ app.get("/logout", function(request, response){
 // Renders admin page
 function renderAdminPage(response){
 	console.log("Inside render admin page");
-	  pg.connect(process.env.DATABASE_URL || connString, function(err, client, done) {
+	  pg.connect(dbConnect, function(err, client, done) {
 
 	  	if(err){
 	  		done();
@@ -160,7 +162,7 @@ function userAuthenticate(requestParam, response){
 
 	}
 
-	pg.connect(process.env.DATABASE_URL || connString, function(err, client, done){
+	pg.connect(dbConnect, function(err, client, done){
 
 		// Handling connection errors
 		if(err){
@@ -204,7 +206,7 @@ function userAuthenticate(requestParam, response){
 function persist(response, requestParam, table){
 
 	console.log("Inside persist function");
-	pg.connect(process.env.DATABASE_URL || connString, function(err, client, done){
+	pg.connect(dbConnect, function(err, client, done){
 
 		// Handling connection errors
 		if(err){
