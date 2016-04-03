@@ -203,16 +203,13 @@ function userAuthenticate(requestParam, response){
 
     	query.on('end', function() {
             done();
-			
-            if(results.length == 1){        
-            	res = results.pop(0);
-            	results = [];            	
-            	return userCheck(res);
-            }
-            else{
-            	console.log("Error: Fetched more than one row");
-            	return response.render('pages/errorPage', {status: 500, error: "Internal Server Error...We will get back to you.."} ); 
-            }	
+			if(results.length > 0){
+				res = results.pop(0);
+				return userCheck(res);
+			}
+			else{
+				return response.render('pages/errorPage', {status: 401, error: "Invalid user name or password!"}); 
+			}	
         });
  		
 	});
