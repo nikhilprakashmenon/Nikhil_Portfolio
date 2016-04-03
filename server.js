@@ -118,7 +118,6 @@ app.get("/logout", function(request, response){
 				response.render("pages/errorPage", {status: 500, error: "Internal Server Error"});
 			}
 		});
-
 		response.render("pages/admin");
 	}
 
@@ -128,26 +127,27 @@ app.get("/logout", function(request, response){
 // Renders admin page
 function renderAdminPage(response){
 	console.log("Inside render admin page");
-	  pg.connect(dbConnect, function(err, client, done) {
+	pg.connect(dbConnect, function(err, client, done) {
 
-	  	if(err){
-	  		done();
-	  		console.log("Not able to connect to database: " + err);
-	  		return response.render('pages/errorPage', {status: 500, error: "Internal Server Error...We will get back to you shortly"} ); 
-	  	}
+		if(err){
+			done();
+			console.log("Not able to connect to database: " + err);
+			return response.render('pages/errorPage', {status: 500, error: "Internal Server Error...We will get back to you shortly"} ); 
+		}
 
-	    client.query('SELECT * FROM public.contact_info;', function(err, result) {
-	      done();
-	      
-	      if (err){
-	    		console.log(err);
-	    		return response.render('pages/errorPage', {status: 500, error: "Internal Server Error...We will get back to you shortly"} ); 
-	    	}
-	      else{ 
-	    		return response.render('pages/adminPage', {results: result.rows, session:sess} ); 
-	      }
-	    });
-	  });
+		client.query('SELECT * FROM public.contact_info;', function(err, result) {
+			done();
+
+			if (err){
+				console.log(err);
+				return response.render('pages/errorPage', {status: 500, error: "Internal Server Error...We will get back to you shortly"} ); 
+			}
+			else{ 
+				return response.render('pages/adminPage', {results: result.rows, session:sess} ); 
+			}
+
+		});
+	});
 }
 
 

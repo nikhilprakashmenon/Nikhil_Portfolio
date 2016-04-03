@@ -1,7 +1,7 @@
 {
   "name": "Nikhil_Portfolio",
   "version": "1.0.0",
-  "description": "My portfolio",
+  "description": "My Portfolio Website",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -24,7 +24,7 @@
     "type": "git",
     "url": "git+https://github.com/nikhilprakashmenon/Nikhil_Portfolio.git"
   },
-  "keywords": [],
+  "keywords": ["Nikhil Prakash", "Portfolio", "responsive", "media queries"],
   "author": "Nikhil Prakash",
   "license": "ISC",
   "bugs": {
