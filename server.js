@@ -111,6 +111,13 @@ app.get("/logout", function(request, response){
 function renderAdminPage(response){
 	console.log("Inside render admin page");
 	  pg.connect(process.env.DATABASE_URL || connString, function(err, client, done) {
+
+	  	if(err){
+	  		done();
+	  		console.log("Not able to connect to database: " + err);
+	  		return response.render('pages/errorPage', {status: 500, error: "Internal Server Error...We will get back to you shortly"} ); 
+	  	}
+
 	    client.query('SELECT * FROM public.contact_info;', function(err, result) {
 	      done();
 	      if (err){
